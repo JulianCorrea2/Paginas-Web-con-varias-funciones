@@ -1,0 +1,5 @@
+Nombre: Longitud de un texto
+Fecha: 10/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa se encarga de calcular los milisegundos que han transcurrido desde la fecha 2000/01/01 hasta la fecha actual.

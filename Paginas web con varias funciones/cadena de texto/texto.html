@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		Ingrese su texto<textarea id="texto"></textarea>
+	</form>
+	<button type="button" onClick="numeroPalabras();">Calcular Tamaño del texto</button>
+	<script>
+		function numeroPalabras(){
+			texto = document.getElementById("texto").value;
+			caracteres = texto.length;
+			division = texto.split("");
+			contpalabras = division.length;
+			conttexto = (contpalabras == 1)? " carácter": " caracteres";
+			alert (contpalabras + conttexto);
+		}
+	</script>
+</body>
+</html>

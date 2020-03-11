@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!--
+Nombre: Longitud de un texto
+Fecha: 10/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa se encarga de calcular la diagonal que existe en la pantalla del usuario solamente ingresando el ancho y alto de su pantalla.
+-->
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Calculando diagonal de su pantalla</h1>
+	<p>Ingrese los valores de su pantalla</p>
+	<form id="valores">
+		Ingrese el ancho de su pantalla<input type="number" name="numero" id="ancho"><br>
+		Ingrese la altura de su pantalla<input type="number" name="numero" id="altura"><br><br>
+		<button id="calcular">Calcular</button>
+	</form>
+	<script>
+			var boton = document.getElementById("calcular");
+
+			boton.addEventListener("click", () => {
+				var num1 = document.getElementById("ancho").value;
+				var num2 = document.getElementById("altura").value;
+
+				var hipo = Math.hypot(num1, num2);
+
+				alert("La diagonal de su pantalla es de: "+hipo)
+			});
+			
+	</script>
+</body>
+</html>

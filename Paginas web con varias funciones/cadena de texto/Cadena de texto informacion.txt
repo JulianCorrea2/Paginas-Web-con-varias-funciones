@@ -1,0 +1,5 @@
+Nombre: Longitud de un texto
+Fecha: 10/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa se encarga de calcular la longitud de letras que se encuentran en una cadena de texto, cabe destacar que tambien se tienen en cuenta los espacios.

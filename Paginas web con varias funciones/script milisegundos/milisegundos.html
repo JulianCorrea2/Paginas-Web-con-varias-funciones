@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Nombre: Longitud de un texto
+Fecha: 10/03/2020
+Version: 1
+Copyright: Julian Enrique Simbaqueba Correa
+Descripcion: El siguiente programa se encarga de calcular los milisegundos que han transcurrido desde la fecha 2000/01/01 hasta la fecha actual.
+-->
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Tiempo transcurrido en milisegundos</h1>
+	<button id="calcular">Calcular</button>
+	<script>
+		var boton = document.getElementById("calcular");
+
+			boton.addEventListener("click", () => {
+				var fecha = new Date('2000-01-01');
+				var fechaActual = new Date('2020-03-10');
+				var tiempoPasado = fechaActual.getTime() - fecha.getTime();
+				var dias = Math.round(tiempoPasado/(1000*60*60*24));
+
+				var milisegundos = dias / (86400000);
+				alert("la cantidad de milisegundos que han pasado desde 2000-01-01 es: " + parseFloat(milisegundos));
+			});
+	</script>
+</body>
+</html>
